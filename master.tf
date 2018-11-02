@@ -1,5 +1,5 @@
 resource "linode_instance" "k8s_master" {
-  count      = 1
+  count      = "${var.masters}"
   region     = "${var.region}"
   label      = "${terraform.workspace}-master-${count.index + 1}"
   group      = "${var.linode_group}"
