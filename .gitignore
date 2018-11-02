@@ -3,6 +3,9 @@
 *.tfstate.backup
 *.terraform.tfstate.lock.info
 
+# Possible sensitive information
+terraform.tfvars
+
 # Module directory
 .terraform/
 
